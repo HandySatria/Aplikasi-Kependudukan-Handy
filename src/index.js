@@ -20,7 +20,6 @@ app.post('/upload', upload.single('photo'), (req, res) => {
     message: 'upload berhasil',
   });
 });
-
 app.use('/users', usersRoutes);
 
 app.use((err, req, res, next) => {
